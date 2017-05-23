@@ -7,26 +7,15 @@ class Gym extends Component {
   }
 
   render() {
-    let showDetails;
-    if (this.props.clickedState === this.props.id) {
-      showDetails =
-        <div>
-          <div>{this.props.address}</div>
-          <div>{this.props.city}, {this.props.state} {this.props.zip}</div>
-        </div>;
-    }
-
-    let onClick = () => {
-      this.props.onClick(this.props.id);
-    };
 
     return (
       <div className="large-12 small-6 columns">
-        <Callout id='gyms-index'>
-          <div onClick={onClick}>
-            {this.props.name}
-            {showDetails}
-          </div>
+        <Callout id="gyms-index">
+          <p>
+            <strong>{this.props.name}</strong><br />
+            {this.props.street}
+            {this.props.city}
+          </p>
         </Callout>
       </div>
     );

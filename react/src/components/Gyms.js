@@ -11,14 +11,14 @@ class Gyms extends Component {
     this.componentWillReceiveProps = this.componentWillReceiveProps.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.zip.length == 5) {
-      this.fetchData(nextProps);
+  componentWillReceiveProps(props) {
+    if (props.zip.length == 5) {
+      this.fetchData(props);
     }
   }
 
-  fetchData(nextProps) {
-    fetch(`/api/v1/gyms`)
+  fetchData(props) {
+    fetch(`/api/v1/gyms/${props.zip}`)
     .then(response => response.json())
     .then((res) => {
       this.setState({

@@ -13,8 +13,8 @@ class Gym extends Component {
         <Callout id="gyms-index">
           <p>
             <strong>{this.props.name}</strong><br />
-            {this.props.street}
-            {this.props.city}
+            {this.props.street}<br />
+            {this.props.city}, {this.props.state} {this.props.zip}
           </p>
         </Callout>
       </div>

@@ -11,18 +11,18 @@ class Gyms extends Component {
     this.componentWillReceiveProps = this.componentWillReceiveProps.bind(this);
   }
 
-  componentWillReceiveProps(props) {
-    if (props.zip.length == 5) {
-      this.fetchData(props);
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.zip.length == 5) {
+    this.fetchData(nextProps);
     }
   }
 
-  fetchData(props) {
-    fetch(`/api/v1/gyms/${props.zip}`)
+  fetchData(nextProps) {
+    fetch(`/api/v1/gyms/${nextProps.zip}`)
     .then(response => response.json())
-    .then((res) => {
+    .then((response) => {
       this.setState({
-        data: res.gyms
+        data: response
       });
     });
   }

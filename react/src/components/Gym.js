@@ -9,7 +9,7 @@ class Gym extends Component {
   render() {
 
     return (
-      <div className="large-12 small-6 columns">
+      <div className="row container large-12 small-6 columns">
         <Callout id="gyms-index">
           <p>
             <strong>{this.props.name}</strong><br />

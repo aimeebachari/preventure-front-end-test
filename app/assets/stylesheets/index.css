@@ -22,3 +22,10 @@ body {
   text-align: center;
   padding-top: 50px;
 }
+
+#gyms {
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+  font-family: 'Droid Serif', serif;
+}

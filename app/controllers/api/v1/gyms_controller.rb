@@ -11,9 +11,10 @@ class Api::V1::GymsController < ApplicationController
     gyms = JSON.parse(response.body)
 
     @gym_results = gyms.select do |gym_hash|
-      gym_hash["zip"] == params[:id]
+      gym_hash["zip"] == params[:id] || gym_hash["city"] == params[:id]
     end
 
-    render json: @gyms_results
+    render json: @gym_results
+
   end
 end

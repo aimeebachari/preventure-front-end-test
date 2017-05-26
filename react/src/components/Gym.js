@@ -10,8 +10,8 @@ class Gym extends Component {
 
     return (
       <div className="row container large-12 small-6 columns">
-        <Callout id="gyms-index">
-          <p>
+        <Callout>
+          <p id="gyms">
             <strong>{this.props.name}</strong><br />
             {this.props.street}<br />
             {this.props.city}, {this.props.state} {this.props.zip}

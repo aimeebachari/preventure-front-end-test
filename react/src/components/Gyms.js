@@ -12,13 +12,12 @@ class Gyms extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.zip.length == 5) {
     this.fetchData(nextProps);
-    }
   }
 
+
   fetchData(nextProps) {
-    fetch(`/api/v1/gyms/${nextProps.zip}`)
+    fetch(`/api/v1/gyms/${nextProps.location}`)
     .then(response => response.json())
     .then((response) => {
       this.setState({
@@ -38,6 +37,7 @@ class Gyms extends Component {
          city={gym.city}
          state={gym.state}
          zip={gym.zip}
+         chain={gym.is_chain}
        />
      );
    });

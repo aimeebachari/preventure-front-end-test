@@ -1,38 +1,34 @@
+# Gym Search
 
-Getting Started
-``` ruby
+This single page, responsive react app was created as part of a front-end developer test. Given an API a user should be able to type in a zipcode or city and a list of gyms will be displayed that match the search criteria.
 
-# Clone down this template
-$ git clone https://github.com/jennceng/react-rails-boilerplate.git <YOUR_APP_NAME>
 
-# Move into your app's directory
-$ cd <YOUR_APP_NAME>
+## Getting Started
 
-# Install all the gems
-$ bundle install
+This project used the following technologies:
 
-$ npm install
+* Ruby 2.2.5
+* Rails 5
+* React
+* Fetch
+* Foundation
 
-# Remove the old git history and start your own
-$ rm -rf .git && git init && git add -A && git commit -m 'Initial commit'
+## Set up Rails
+```
+git clone https://github.com/aimeebachari/preventure-front-end-test
+bundle install
+rake db:create
+rake db:migrate
 ```
 
----
-
-Configuring Your Database
-
-This template is set up for using a PostgreSQL database. You will need to create a config/database.yml. There is an example at config/database.example.yml.
-
-Once you've created a config/database.yml, you can create your database
-
-```ruby
-$ rake db:create
-$ rails s
+## Set up Webpack
+```
+npm install
 ```
 
-open another tab and
-
-```ruby
-$ npm start
+## Run the Application
 ```
-go to [http://localhost:3000](http://localhost:3000) and make sure you see `dope`, which is rendered via react
+rails s
+npm start
+```
+Open the browswer and enter `localhost:3000`.

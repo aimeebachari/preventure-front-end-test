@@ -18,8 +18,8 @@ class App extends Component {
     return(
       <div>
         <h1 className="title"> Gym Search </h1>
-        <form className='react-search'>
-          <input type='text' id='search-input'  placeholder='  Enter your zip or city and state' onChange={this.setLocation}/>
+        <form className='react-search row container small-6 large-12 columns'>
+          <input type='text' id='search-input'  placeholder='  Enter your zip or city' onChange={this.setLocation}/>
         </form>
         <div>
           <Gyms

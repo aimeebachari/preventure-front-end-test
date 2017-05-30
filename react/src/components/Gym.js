@@ -7,11 +7,10 @@ class Gym extends Component {
   }
 
   render() {
-
     return (
-      <div className="row container large-12 small-6 columns">
-        <Callout>
-          <p id="gyms">
+      <div className="row container small-6 large-12 columns">
+        <Callout id="gyms-index">
+          <p>
             <strong>{this.props.name}</strong><br />
             {this.props.street}<br />
             {this.props.city}, {this.props.state} {this.props.zip}

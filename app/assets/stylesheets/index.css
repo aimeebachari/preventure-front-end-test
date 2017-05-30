@@ -23,29 +23,24 @@ body {
   padding-top: 50px;
 }
 
-#gyms {
-  text-align: center;
-  padding-top: 10px;
-  color: black;
-  font-family: 'Droid Serif', serif;
-}
-
 .callout#gyms-index {
   background-color: white;
   text-align: center;
   padding-bottom: 1px;
   padding-top: 1px;
   margin: auto;
-  width: 250px;
+  width: 300px;
   border-style: solid;
   border-width: 1px;
+  color: black;
+  font-family: 'Droid Serif', serif;
 }
 
 @media only screen and (max-width: 40em) {
   #search-input {
     width: 70%;
     height: 40px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .title {
     font-size: 50px;
